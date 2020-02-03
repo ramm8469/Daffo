@@ -1,0 +1,12 @@
+Data types in js
+1 Strings
+2 Numbers
+	Integer
+	Real
+3 Boolean
+4 Undefined
+5 Null 
+6 Symbol - it is a type of data which creates unique symbols which very different from others
+
+
+Except these all others are Objects in JS
