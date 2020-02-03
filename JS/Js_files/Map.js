@@ -99,6 +99,4 @@ for(let data of myMap){
 
 // Using the for each built in feature of map to read the data
 
-myMap.forEach((value,key,myMap)) => {
-    console.log("The key is : "+key+" and the value is  :"+val);
-}
+
