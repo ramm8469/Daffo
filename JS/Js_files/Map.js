@@ -99,4 +99,33 @@ for(let data of myMap){
 
 // Using the for each built in feature of map to read the data
 
+myMap.forEach(
+
+(value,key,map) => {
+    console.log("The Key is : "+key+" : The Value is : "+value)
+}
+);
+
+// for each is not working here
+
+// Creating an entire map using object
+
+// Creating an Object
+var myObj = {
+    Name:"John Doe",
+    Age : 23,
+    address : "Mountain View, California"
+}
+
+console.log(myMap)
+
+// Creating a map using myObj
+var myNewMap = new Map(Object.entries(myObj))
+
+// getting the values of the object using 
+// the methods of the map
+console.log(myNewMap.get("Name"))
+console.log(myNewMap.get("Age"))
+console.log(myNewMap.get("address"))
+
 
