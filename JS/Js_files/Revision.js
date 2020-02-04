@@ -296,13 +296,36 @@ class Animal{
  console.log()
 
  // creating object of the child class(insect class)
- var titli = new Insects(4,6,2)
- titli.see() // this see() method from insect class is overrided inherited from the Animal Class
- titli.walk()
- titli.fly()
- titli.fly("north")
+//  var titli = new Insects(4,6,2)
+//  titli.see() // this see() method from insect class is overrided inherited from the Animal Class
+//  titli.walk()
+//  titli.fly()
+//  titli.fly("north")
 
 
+ // Prototypal Inheritance or Prototyping in JS
+
+ let animal = {
+    eats: true,
+    run: function(){
+        console.log("Animals can run")
+    }
+  };
+  let rabbit = {
+    jumps: true,
+    // trying to override the run method
+    run:function(){
+        console.log("Rabbit can run faster")
+    }
+  };
+  
+  rabbit.__proto__ = animal;
+
+  console.log(animal.eats)
+  console.log(rabbit.eats)
+  console.log(rabbit.jumps)
+  console.log(animal.run())
+  console.log(rabbit.run())
 
 
  
