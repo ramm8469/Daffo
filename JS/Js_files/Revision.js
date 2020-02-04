@@ -175,41 +175,134 @@ var person = {
 //     [
 //         Promise.resolve(5),
 //         Promise.reject(66),
-//         Promise.resolve(2)
+//         Promise.resolve(2),
+//         Promise.reject(77)
         
 //     ]
 // )
-// .then(console.log())
-// .catch(console.log())
+// .then(console.log)
+// .catch(console.log)
 
 // Call back hell demo
 
-function foo(){
-    console.log(1)
-    setTimeout(
-        () => {
-            console.log(2),
-            setTimeout(
-                () => {
-                    console.log(3)
-                    setTimeout(
-                        () => {
-                            console.log(4)
-                        },
-                        console.log(5),
-                        1500
-                    )
-                },
-                console.log(6),
-                1500
-            )
-        },
-        console.log(7),
-        1500
-    )
-    console.log(8)
-}
+// function foo(){
+//     console.log(1)
+//     setTimeout(
+//         () => {
+//             console.log(2),
+//             setTimeout(
+//                 () => {
+//                     console.log(3)
+//                     setTimeout(
+//                         () => {
+//                             console.log(4)
+//                         },
+//                         console.log(5),
+//                         1500
+//                     )
+//                 },
+//                 console.log(6),
+//                 1500
+//             )
+//         },
+//         console.log(7),
+//         1500
+//     )
+//     console.log(8)
+// }
 
 // calling the foo
 
-foo()
+// foo()
+
+
+// Classes in Js
+
+class Animal{
+    constructor(eye,leg){
+        this.eye = eye
+        this.leg = leg
+    }
+
+    // trying  to overload the constructor 
+    // constructor(eye,leg,wings){
+    //     this.eye = eye
+    //     this.leg = leg
+    //     this.wings = wings
+    // }
+
+    // constructor overloading is not possible in js
+   
+    // Defining methods in class
+    see(){
+        console.log("The animal can see with it's "+this.eye+" eyes")
+    }
+
+    walk(){
+        console.log("The animal can walk with it's "+this.leg+" legs")
+    }
+
+}
+
+// creating objects of animal class
+ var cat =  new Animal(2,4)
+ cat.see()
+ cat.walk()
+
+ var butterfly = new Animal(4,6)
+
+ butterfly.see()
+ butterfly.walk()
+
+//  // creating object of animal class to check constructor overloading
+//  var ins = new Animal(2,6,2)
+
+//  ins.walk()
+//  ins.see()
+
+
+ // Inheritance in JS
+
+ class Insects extends Animal{
+    
+
+    constructor(eye,leg,wings){
+        super(eye,leg)
+        this.wings = wings
+    }
+
+    fly(){
+        console.log("The insect can fly with it's "+this.wings+" wings")            
+
+    }
+
+    // checking method overloading in js
+    fly(direction){
+        console.log("The insect can fly with it's "+this.wings+" wings"+" in "+direction+" direction")            
+        
+    }
+
+    // method overloading is not possible in js, as the most last 
+    // method overwrite all the previous method with the same name
+
+
+    // checking the method overriding in js
+    see(){
+        console.log("The insects can see better than any other animals")
+    }
+
+    // Method overriding is possible in js
+ }
+ console.log()
+
+ // creating object of the child class(insect class)
+ var titli = new Insects(4,6,2)
+ titli.see() // this see() method from insect class is overrided inherited from the Animal Class
+ titli.walk()
+ titli.fly()
+ titli.fly("north")
+
+
+
+
+ 
