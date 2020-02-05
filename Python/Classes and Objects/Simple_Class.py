@@ -21,6 +21,6 @@ class  Simple:
         self.name = name
         self.age = age
     
-myObj = Simple_Class("john",23)
+# myObj = Simple_Class("john",23)
 
-myObj.getData()
+# myObj.getData()
