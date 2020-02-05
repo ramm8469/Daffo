@@ -51,7 +51,11 @@ console.log("=================================")
 
 // Reduce Demo
 // i'm confused in while understanding reduce()
+console.log("=================Reduce================")
 
+ var nums = [1,2,3,4,5,6,7,8]
+ var ress = nums.reduce((d,sum) =>  sum + d)
+ console.log(ress)
 
 // Filter Demo
 // Filter is a predefined function, used to filter out 
@@ -61,6 +65,9 @@ var nums = [1,2,3,4,5,6,7,8,9,10]
  var even = nums.filter((ele) => {
      if(ele%2 == 0){
          return ele
+     }
+     else{
+         console.log("false0")
      }
  })
  console.log(even)
