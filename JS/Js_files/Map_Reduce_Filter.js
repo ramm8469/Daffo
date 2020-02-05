@@ -71,3 +71,33 @@ var nums = [1,2,3,4,5,6,7,8,9,10]
      }
  })
  console.log(even)
+
+ // question on context
+var obj1 = {
+    first : "john",
+    last : "doe",
+    first_name : () => {console.log(this.first)},
+    last_name : function(){
+        console.log(this.last)
+    }
+}
+
+
+// console.log("Context question")
+// obj1.first_name()
+// obj1.last_name()
+
+// object question
+obj1 = {
+    name : "john"
+}
+obj2 = {
+    name:"john"
+}
+
+obj3 = obj1
+
+console.log(obj1 === obj3)
+console.log(obj1 === obj2) 
+console.log(obj1 == obj3)
+console.log(obj1 == obj2)
