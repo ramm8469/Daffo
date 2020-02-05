@@ -1,4 +1,4 @@
-class  Simple:
+class Simple:
     # defining the properties 
     x = 21
 
@@ -20,7 +20,10 @@ class  Simple:
     def setData(self,name,age):
         self.name = name
         self.age = age
-    
-# myObj = Simple_Class("john",23)
 
-# myObj.getData()
+
+#============== Creating Objects ==========================
+    
+myObj = Simple("john",23)
+
+myObj.getData()
