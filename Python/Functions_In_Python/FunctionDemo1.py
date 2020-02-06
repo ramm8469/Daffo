@@ -24,3 +24,28 @@ print("="*50)
 print(square(2))
 print(square(4))
 
+
+# funciton with multiple arguments
+def sum(num1,num2,num3):
+    return num1+num2+num3
+
+
+# Calling the function
+print("="*50)
+print(sum(1,2,3))
+
+
+
+# Special functions
+# returning a function by a function
+# or we may say that "call back " in JS
+def callAnotherFunctino(data):
+    return square(data)
+
+
+callbackres = callAnotherFunctino(2)
+print("*"*50)
+print(callbackres)
+
+
+
