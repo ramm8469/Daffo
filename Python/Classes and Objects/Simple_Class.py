@@ -27,3 +27,19 @@ class Simple:
 myObj = Simple("john",23)
 
 myObj.getData()
+
+# __new__ : Keyword
+# class demo:
+#     def __new__(self):
+#         return "Hello"
+
+# d = demo()
+# print(type(d))
+
+
+# class demo1:
+#     def __init__(self):
+#         print("Hello ")
+    
+# dd = demo1()
+# print(type(dd))
