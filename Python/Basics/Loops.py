@@ -2,11 +2,19 @@
 # and Operations on it
 
 myList = list(range(11))
-print(myList)
+print(myList,end="-")
+print()
 # While Loop
 length = len(myList)
-while(length > 0):
-    print(myList[length],end="-")
-    length = length-1
+i = 0
+while(i < length):
+    print(myList[i],end="-")
+    i += 1
+
+print()
 
 # For Loop
+
+for i in myList:
+    print(i,end="==")
+print()
