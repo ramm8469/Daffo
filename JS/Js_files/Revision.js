@@ -22,62 +22,67 @@ function foo(){
 // context demo
 
 // regular object method
-var john = {
-    name:"John doe",
-    full_name:function(){
-        console.log(this.name)
-    }
-}
+// var john = {
+//     name:"John doe",
+//     full_name:function(){
+//         console.log(this.name)
+//     }
+// }
 
-// john.full_name()
+//  john.full_name()
 
-// regular funtion
-function data(){
-   let a = "my"
-    console.log(this.a)
-}
+// // regular funtion
+// function data(){
+//    var a = "my"
+//     console.log(this.a)
+// }
 
-// data()
+//  data()
 
 // console.log("0" === true)
 // console.log("1" === true)
 // console.log(+'34'+'10')
-// document.write(typeof typeof(24.49))
+// console.log(  typeof typeof(undefined))
 
 // console.log("first");
 // setTimeout(function(){
-//     console.log("second"),-1000
+//     console.log("second"),1000
 // })
 
 // console.log("third")
 
 
 var person = {
-    name:"jack",
+    names:"jack",
     prop:{
-        name:"daniel",
+        names:"daniel",
         getName:function(){
-            return this.name
+            return this.names
         }
     }
 }
 
-// var name = person.prop.getName
-// console.log(name)
+console.log( person.prop.getName())
+// console.log(names)
+console.log(person.names)
+// console.log(names)
+
 
 
 // var name = person.prop.getName.bind(person)
 // console.log(name)
 
 
-// const arr  =[10,12,15,21]
+// const arr  =[10,12,15,21,11]
 
 // for(let i = 0;i<arr.length;i++){
 //     setTimeout(function(){
 //         console.log("index"+i+" element "+arr[i])
 //     },3000)
-    
 // }
+
+// #Sadguru  :  as identity grows, the psycological drama 
+// grows too
 
 
 // promises in js
@@ -85,11 +90,11 @@ var person = {
 // promise, where if promise is commited then it is
 // accepted else it is rejected
 
-// in js- promise, we use resolve and reject
+// in js- promise, we use resolve and reject,
 // whenever something is accepted it goes to resolve
 // else goes to reject statement
 
-// it is accessed as follows
+// it is accessed as follows:
 // resolve is accessed via then method
 // and reject is accessed via catch method
 
@@ -144,30 +149,30 @@ var person = {
 
 
 // question 2
-// Promise.reject(5)
-//     .then(
-//         function(res){
-//             console.log(res)
-//             return 6
-//         }
-//     )
-//     .catch(
-//         function(err){
-//             console.log(err)
-//         }
-//     )
-//     .then(
-//         function(res){
-//             console.log(res)
-//             return 6
-//         }
+Promise.reject(5)
+    .then(
+        function(res){
+            console.log(res)
+            return 6
+        }
+    )
+    .catch(
+        function(err){
+            console.log(err+"c1")
+        }
+    )
+    .then(
+        function(res){
+            console.log(res)
+            return 6
+        }
 
-//     )
-//     .catch(
-//         function(err){
-//             console.log(err)
-//         }
-//     )
+    )
+    .catch(
+        function(err){
+            console.log(err+"c2")
+        }
+    )
 
 
 // question 3
