@@ -52,25 +52,25 @@ function foo(){
 // console.log("third")
 
 
-var person = {
-    names:"jack",
-    prop:{
-        names:"daniel",
-        getName:function(){
-            return this.names
-        }
-    }
-}
+// var person = {
+//     names:"jack",
+//     prop:{
+//         names:"daniel",
+//         getName:function(){
+//             return this.names
+//         }
+//     }
+// }
 
-console.log( person.prop.getName())
-// console.log(names)
-console.log(person.names)
-// console.log(names)
+// console.log( person.prop.getName())
+// // console.log(names)
+// console.log(person.names)
+// // console.log(names)
 
 
 
-// var name = person.prop.getName.bind(person)
-// console.log(name)
+// var name = person.prop.getName.call(person)
+// console.log(name+" asdfsadf")
 
 
 // const arr  =[10,12,15,21,11]
@@ -143,45 +143,45 @@ console.log(person.names)
 // )
 // .then(
 //     function(res){
-//         console.log(res)
+//         console.log(res+"extra")
 //     }
 // )
 
 
-// question 2
-Promise.reject(5)
-    .then(
-        function(res){
-            console.log(res)
-            return 6
-        }
-    )
-    .catch(
-        function(err){
-            console.log(err+"c1")
-        }
-    )
-    .then(
-        function(res){
-            console.log(res)
-            return 6
-        }
+// // question 2
+// Promise.reject(5)
+//     .then(
+//         function(res){
+//             console.log(res)
+//             return 6
+//         }
+//     )
+//     .catch(
+//         function(err){
+//             console.log(err+"c1")
+//         }
+//     )
+//     .then(
+//         function(res){
+//             console.log(res)
+//             return 6
+//         }
 
-    )
-    .catch(
-        function(err){
-            console.log(err+"c2")
-        }
-    )
+//     )
+//     .catch(
+//         function(err){
+//             console.log(err+"c2")
+//         }
+//     )
 
 
 // question 3
 // Promise.all(
 //     [
 //         Promise.resolve(5),
-//         Promise.reject(66),
+//         //Promise.reject(66),
 //         Promise.resolve(2),
-//         Promise.reject(77)
+//         //Promise.reject(77)
         
 //     ]
 // )
@@ -216,7 +216,7 @@ Promise.reject(5)
 //     console.log(8)
 // }
 
-// calling the foo
+//calling the foo
 
 // foo()
 
@@ -332,5 +332,10 @@ class Animal{
   console.log(animal.run())
   console.log(rabbit.run())
 
+  arr = [1,2,3,3,4,5,6,7,7,8,9]
+  console.log(arr)
+  for(let i = 0; arr.lenght;i++){
+  console.log(arr[i])
+  }
 
  
