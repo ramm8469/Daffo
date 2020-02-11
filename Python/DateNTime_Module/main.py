@@ -10,5 +10,3 @@ localtime = time.localtime(time.time())
 print ("Local current time :" ,localtime[2],"/",localtime[1],"/",localtime[0])
 print("Hours : Minutes : Seconds  === ",localtime[3],":",localtime[4],":",localtime[5])
 
-for i in range(1000000):
-    print(localtime[5])
