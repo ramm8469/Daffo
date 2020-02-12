@@ -21,15 +21,23 @@ print("Today  : ",tday," WeekDay : ",wkday )
 
 # TimeDelta : TimeDelta is just the difference between two dates
 
-tdelta = datetime.timedelta(days=7)
+tdelta = datetime.timedelta(weeks=52)
+res = tday - tdelta
+ttdelta = datetime.timedelta(weeks=4*4)
+res2 = res - ttdelta
+tttdelta = datetime.timedelta(days=2)
+res3 = res2 - tttdelta
+print(res)
+print(res2)
+print(res3)
 
-after_tday = tday+tdelta
-print(after_tday)
-before_tday  = tday - tdelta
-print(before_tday) # date as result
+# after_tday = tday+tdelta
+# print(after_tday)
+# before_tday  = tday - tdelta
+# print(before_tday) # date as result
 
 
-print(after_tday-before_tday) # (timedelta) days as a result
+# print(after_tday-before_tday) # (timedelta) days as a result
 
 # Note : if we add/sub date with timedelta, then we get date as a result
 # whereas, if we add/sub date with date, then we get days as a result
