@@ -10,3 +10,5 @@ except ZeroDivisionError:
     print("You can not divide a number by Zero")
 except:
     print(" An error occured, this message is from generic exception handling")
+finally:
+    print("This is from the finally Block")

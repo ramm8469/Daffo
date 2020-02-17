@@ -102,3 +102,15 @@ kitty.hand = 6
 print(cat.hand)
 print(kitty.hand)
 print(kitty_1.hand)
+
+# class animal:
+#     def __init__(self,name):
+#         self.name = name
+    
+#     @classmethod
+#     def get(cls,name):
+#         return cls(name)
+
+
+# dog  = animal.get("Zerman Sheford")
+# print(dog.name)
