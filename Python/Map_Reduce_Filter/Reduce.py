@@ -14,3 +14,8 @@ from functools import reduce
 li = [5, 8, 10, 20, 50, 100] 
 sum = reduce((lambda x, y: x + y), li) 
 print (sum) 
+
+list_1 = list(range(11))
+print(list_1)
+sum_1 = reduce((lambda x,y: x+y),list_1)
+print(sum_1)
