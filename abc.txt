@@ -1,0 +1,2 @@
+This is from file opener funciton
+using the Context manager decorator
